@@ -88,7 +88,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <AppTemplate header={<Header left={<HeaderNav tab={tab} onSelect={this.handleSelectTab} />} right={<Button onClick={this.handleToggleWriteBox}>새 글 작성</Button>} />}>
+        <AppTemplate header={<Header left={<HeaderNav tab={tab} onSelect={this.handleSelectTab} />} right={<Button onClick={this.handleToggleWriteBox}>새 글 작성1</Button>} />}>
           {writeBox && <WriteBox onClose={this.handleToggleWriteBox} onWrite={this.handleWrite} /> }
           <PostCardList posts={posts} onRemove={this.handleRemove} />
         </AppTemplate>
